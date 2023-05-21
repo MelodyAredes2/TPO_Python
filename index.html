@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPO final</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/013e3eb15c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="containerwave bg-header"> 
+        <section class="nav1 menu">
+          <div id="btn-show-noshow"><button id="toggleBtn"><i class="fa-solid fa-bars-progress"></i></button></div>
+            <ul id="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#historia">Historia de la ciudad</a></li>
+                <li><a href="#ciudad">Conoce la ciudad</a></li>
+                <li><a href="#clima">Clima</a></li>
+                <li><a href="#formulario">Contacto</a></li>
+            </ul>
+        </section>
+        <section class="Titulo">
+            <h1>Bienvenidos a Mar del Plata</h1>
+            <p>La ciudad mas linda de Argentina</p>
+        </section>
+        <div class="wave"></div>
+    </header>
+    <main>
+        <!--Historia de la ciudad-->
+        <section id="historia">
+          <div class="row1 justify-content-center1">
+            <div class="columna justify-content-center1 text-center1">
+              <h2>Historia de la ciudad</h2>
+              <img src="./src/mardelplata-historia.webp" alt="" width="50%">
+              <p>Mar del Plata es una ciudad ubicada en el sudeste de la provincia de Buenos Aires, Argentina, sobre la costa del mar argentino. Fue fundada con su nombre actual el 10 de febrero de 1874 por Patricio Peralta Ramos, en una estancia de su propiedad, sobre la base de la segunda de las tres extintas misiones jesuíticas de la Pampa, fundadas en la segunda mitad del siglo xviii, denominada Nuestra Señora del Pilar de Puelches, que más tarde recibió el nombre de «Puerto de la Laguna de los Padres».</p>
+            </div>
+          </div>
+        </section>
+        <!--Conoce la ciudad-->
+        <section id="ciudad">
+          <div class="row1 justify-content-center1">
+            <div class="columna justify-content-center1 text-center1">
+              <h2>Conoce la ciudad</h2>
+            </div>
+          </div>
+          <div class="row1 justify-content-center1">
+            <div class="columna justify-content-center1 text-center1 container-iframe">
+              <iframe src="https://www.youtube.com/embed/eI5QpUQhZXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </section>
+        <!--API-->
+        <section id="clima">
+          <div class="resultados"></div>
+        </section>
+        <!--Formulario-->
+        <section id="formulario">
+          <div class="row justify-content-center mx-0">
+            <div class="col-sm-8 bg-light pt-3 mt-3 mb-3">
+                <div class="text-center mb-3">
+                  <h3>Formulario de contacto</h3>
+                </div>
+                <form class="row1 g-3 needs-validation" novalidate>
+                  <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Primer Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                    <div class="valid-feedback">
+                      Nombre Correcto!
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                    <div class="valid-feedback">
+                      Apellido Correcto!
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Mail</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        Introduce un mail correcto.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                      Introduce una ciudad correcta
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Provincia</label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected disabled value="">Seleccione uno...</option>
+                      <option>Buenos Aires</option>
+                      <option>Cordoba</option>
+                      <option>Santa Fe</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Seleccione una provincia.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Codigo Postal</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Introduce un codigo postal.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        Acepta terminos y condiciones
+                      </label>
+                      <div class="invalid-feedback">
+                        Debes aceptar los terminos y condiciones.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mb-3 text-center">
+                    <button class="btn btn-success" type="submit">Submit form</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <section>
+        <div class="footer-style">       
+          <ul>
+            <li><a href="tel:+223543643"><i class="fa-solid fa-phone"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-sitemap">Site Map</i></a></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+
+    </footer>
+    <script src="./js/validator.js"></script>
+    <script src="./js/clima.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
